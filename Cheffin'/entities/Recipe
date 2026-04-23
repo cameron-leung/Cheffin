@@ -1,0 +1,147 @@
+{
+  "name": "Recipe",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "author": {
+      "type": "string",
+      "description": "Recipe author or contributor"
+    },
+    "image_url": {
+      "type": "string"
+    },
+    "cuisine": {
+      "type": "string",
+      "enum": [
+        "Italian",
+        "Mexican",
+        "Chinese",
+        "Japanese",
+        "Indian",
+        "Thai",
+        "French",
+        "Mediterranean",
+        "American",
+        "Korean",
+        "Vietnamese",
+        "Middle Eastern",
+        "Greek",
+        "Other"
+      ]
+    },
+    "time_of_day": {
+      "type": "string",
+      "enum": [
+        "Breakfast",
+        "Lunch",
+        "Dinner",
+        "Snack",
+        "Dessert",
+        "Brunch"
+      ]
+    },
+    "occasion": {
+      "type": "string",
+      "enum": [
+        "Everyday",
+        "Date Night",
+        "Party",
+        "Holiday",
+        "Quick Meal",
+        "Meal Prep",
+        "Special Occasion"
+      ]
+    },
+    "dietary": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "Vegetarian",
+          "Vegan",
+          "Gluten-Free",
+          "Dairy-Free",
+          "Keto",
+          "Paleo",
+          "Nut-Free",
+          "Low-Carb"
+        ]
+      }
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Descriptive tags like 'comfort food', 'weeknight', '30 minutes'"
+    },
+    "prep_time": {
+      "type": "number"
+    },
+    "cook_time": {
+      "type": "number"
+    },
+    "servings": {
+      "type": "number"
+    },
+    "web_rating": {
+      "type": "number",
+      "description": "Rating from source site out of 5"
+    },
+    "review_count": {
+      "type": "number",
+      "description": "Number of reviews on source site"
+    },
+    "ingredients": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "amount": {
+            "type": "string"
+          },
+          "unit": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "steps": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "source": {
+      "type": "string",
+      "enum": [
+        "manual",
+        "web"
+      ],
+      "default": "manual"
+    },
+    "source_url": {
+      "type": "string"
+    },
+    "source_site": {
+      "type": "string",
+      "enum": [
+        "allrecipes",
+        "nytcooking",
+        "epicurious",
+        "other"
+      ]
+    }
+  },
+  "required": [
+    "title"
+  ]
+}

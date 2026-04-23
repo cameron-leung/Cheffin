@@ -1,0 +1,22 @@
+{
+  "name": "RecipeRating",
+  "type": "object",
+  "properties": {
+    "recipe_id": {
+      "type": "string",
+      "description": "ID of the rated recipe"
+    },
+    "rating": {
+      "type": "number",
+      "description": "Rating from 1-5"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Personal notes about the recipe"
+    }
+  },
+  "required": [
+    "recipe_id",
+    "rating"
+  ]
+}

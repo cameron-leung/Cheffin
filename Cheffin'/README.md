@@ -1,0 +1,3 @@
+Cheffin' Cookbook app to rate, create, share, and shop recipes
+
+Features: A central place to rate your meals and find new ones. Includes custom recipe search scraped from sites like AllRecipes, Epicurious, and NYT Cooking. Includes a profile of your rated recipes, recipe inspo, personal new creations, and friends. Helps you find your next meal through search and recommendation tuned to your tastes, dietary restrictions, past meals, and Friends. Helps you build a holistic meal plan and comprehensive shopping list given your pantry staples and serving size.
